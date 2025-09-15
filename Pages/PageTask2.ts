@@ -12,7 +12,7 @@ export class PageTask2 extends BasePage {
   
  logo = this.page.locator('//div[contains(@class,"container_fullWidth__1H_L8")]//img');
 
-  async goto() {
+  async navigateToDuckDuckGo() {
     await this.page.goto('https://duckduckgo.com/');
   }
     async assertLogo() {

@@ -8,7 +8,7 @@ import { BasePage } from './BasePage';
 
 export class PageTask1 extends BasePage {
 
-  async goto() {
+  async navigateToDuckDuckGo() {
     await this.page.goto('https://duckduckgo.com/');
   }
   

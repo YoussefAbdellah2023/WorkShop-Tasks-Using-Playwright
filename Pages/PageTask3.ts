@@ -1,5 +1,7 @@
 import { expect } from '@playwright/test';
 import { BasePage } from './BasePage';
+
+
 //    Open Google Chrome
 //    Navigate to [https://duckduckgo.com/]
 //    Search for [Selenium WebDriver]
@@ -13,7 +15,7 @@ export class PageTask3 extends BasePage {
     firstResultLink = this.page.locator('//article[@id="r1-0"]//h2/a').first();
   
 
-    async goto() {
+    async navigateToDuckDuckGo() {
     await this.page.goto('https://duckduckgo.com/');
   }
     async search(query: string) {
